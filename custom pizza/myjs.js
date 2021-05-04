@@ -202,7 +202,7 @@ function drawPizzaTopping(image) {
 }
 
 function removeElementsfromContainer() {
-  let container = document.getElementById("container");
+  let container = document.getElementById("cpelement_ul");
   container.innerHTML = "";
 }
 

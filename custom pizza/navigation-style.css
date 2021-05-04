@@ -18,15 +18,15 @@ body {
   background: white;
 }
 
-nav {
+header {
   background: orange;
 }
-nav:after {
+header:after {
   content: "";
   clear: both;
   display: table;
 }
-nav .logo {
+header .logo {
   float: left;
   color: white;
   font-size: 27px;
@@ -34,33 +34,33 @@ nav .logo {
   line-height: 70px;
   padding-left: 60px;
 }
-nav ul {
+header ul {
   float: right;
   margin-right: 40px;
   list-style: none;
   position: relative;
 }
-nav ul li {
+header ul li {
   float: left;
   display: inline-block;
   background: orange;
   margin: 0 5px;
 }
-nav ul li a {
+header ul li a {
   color: white;
   line-height: 70px;
   text-decoration: none;
   font-size: 18px;
   padding: 8px 15px;
 }
-nav ul li a:hover {
+header ul li a:hover {
   color: rgb(255, 102, 0);
   border-radius: 5px;
 }
-nav ul ul li a:hover {
+header ul ul li a:hover {
   box-shadow: none;
 }
-nav ul ul {
+header ul ul {
   position: absolute;
   top: 90px;
   border-top: 3px solid orange;
@@ -68,15 +68,15 @@ nav ul ul {
   visibility: hidden;
   transition: top 0.3s;
 }
-nav ul ul ul {
+header ul ul ul {
   border-top: none;
 }
-nav ul li:hover > ul {
+header ul li:hover > ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
 }
-nav ul ul li {
+header ul ul li {
   position: relative;
   margin: 0px;
   width: 150px;
@@ -84,14 +84,15 @@ nav ul ul li {
   display: list-item;
   border-bottom: 1px solid rgb(255, 102, 0);
 }
-nav ul ul li a {
+header ul ul li a {
   line-height: 50px;
 }
-nav ul ul ul li {
+header ul ul ul li {
   position: relative;
   top: -60px;
   left: 150px;
 }
+
 .show,
 .icon,
 input {
@@ -102,11 +103,11 @@ input {
   margin-left: 40px;
 }
 @media all and (max-width: 968px) {
-  nav ul {
+  header ul {
     margin-right: 0px;
     float: left;
   }
-  nav .logo {
+  header .logo {
     padding-left: 30px;
     width: 100%;
   }
@@ -114,12 +115,12 @@ input {
   ul {
     display: none;
   }
-  nav ul li,
-  nav ul ul li {
+  header ul li,
+  header ul ul li {
     display: block;
     width: 100%;
   }
-  nav ul li a:hover {
+  header ul li a:hover {
     box-shadow: none;
   }
   .show {
@@ -143,7 +144,7 @@ input {
     cursor: pointer;
     font-size: 25px;
   }
-  nav ul ul {
+  header ul ul {
     top: 70px;
     border-top: 0px;
     float: none;
@@ -152,19 +153,19 @@ input {
     opacity: 1;
     visibility: visible;
   }
-  nav ul ul a {
+  header ul ul a {
     padding-left: 40px;
   }
-  nav ul ul ul a {
+  header ul ul ul a {
     padding-left: 80px;
   }
-  nav ul ul ul li {
+  header ul ul ul li {
     position: static;
   }
   [id^="btn"]:checked + ul {
     display: block;
   }
-  nav ul ul li {
+  header ul ul li {
     border-bottom: 0px;
   }
   span.cancel:before {
@@ -178,11 +179,6 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-header {
-  font-size: 35px;
-  font-weight: 600;
-  padding: 10px 0;
 }
 p {
   font-size: 30px;

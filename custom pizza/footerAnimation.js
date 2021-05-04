@@ -1,5 +1,5 @@
-var footerCanvasArea = document.getElementById("footerCanvasAnimation");
-const canvas = document.getElementById("canvas1");
+var footerCanvasArea = document.getElementById("customfooter");
+const canvas = document.getElementById("footercanvas");
 canvas.width = footerCanvasArea.clientWidth;
 canvas.height = footerCanvasArea.clientHeight;
 
