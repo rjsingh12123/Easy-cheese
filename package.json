@@ -1,8 +1,8 @@
 {
-    "name": "easycheese",
-    "version": "1.0.0",
-    "description": "Easy cheese Pizza app",
-    "main": "index.js",
+  "name": "easycheese",
+  "version": "1.0.0",
+  "description": "Pizza app",
+  "main": "index.js",
   "author": "rjsingh",
   "license": "",
   "scripts": {
@@ -10,7 +10,7 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "connect-mongo": "^3.2.0",
     "dotenv": "^8.6.0",
     "ejs": "^3.1.6",
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "axios": "^0.21.1",
-    "laravel-mix": "^6.0.18",
-    "postcss": "8.1"
+    "laravel-mix": "^6.0.19",
+    "postcss": "^8.1.14"
   }
 }
